@@ -7,6 +7,15 @@ development:
     - ".git/*"
     - .gitignore
 
+staging:
+  theme_id: "142616854597"
+  password: ${SHOPIFY_STAGING_PASSWORD}
+  store: rangerup.myshopify.com
+  ignore_files:
+    - .git
+    - ".git/*"
+    - .gitignore
+
 production:
   theme_id: "123323088965"
   password: ${SHOPIFY_PROD_PASSWORD}
