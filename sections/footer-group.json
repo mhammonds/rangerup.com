@@ -1,0 +1,77 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "ace8f677-46d1-4f0e-8315-821d2348895b": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/RU-transparent-gold_200x_200x_2_d97166ba-ebd2-4c0f-9f27-2faeb58d8624.png",
+            "image_width": 100,
+            "alignment": ""
+          }
+        },
+        "6a77ebab-0c13-4660-ac7e-fe0f3bee2943": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
+          }
+        },
+        "2785a2f3-4d1a-42dd-92eb-03ce4db7ef84": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "customer-care"
+          }
+        },
+        "89630eb3-962b-4dfc-aed7-b4b2c5b2cf0d": {
+          "type": "shopify:\/\/apps\/loox-product-reviews-photos\/blocks\/loox-trust-badge\/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "layout": "horizontal",
+            "alignment": "fillContainer",
+            "scheme-type": "default",
+            "review-title": "reviews",
+            "rating-icon": true,
+            "average-rating": true,
+            "review-count": true,
+            "open-reviews": true,
+            "show-border": false,
+            "border-radius": 8,
+            "font-size": 20,
+            "background-color": "",
+            "secondary-background-color": "",
+            "text-color": "",
+            "rating-icon-color": "",
+            "border-color": ""
+          }
+        }
+      },
+      "block_order": [
+        "ace8f677-46d1-4f0e-8315-821d2348895b",
+        "6a77ebab-0c13-4660-ac7e-fe0f3bee2943",
+        "2785a2f3-4d1a-42dd-92eb-03ce4db7ef84",
+        "89630eb3-962b-4dfc-aed7-b4b2c5b2cf0d"
+      ],
+      "settings": {
+        "color_scheme": "scheme-5bf6f4b6-aafe-4aa6-9f55-8a08ea904578",
+        "newsletter_enable": false,
+        "newsletter_heading": "Subscribe to our emails",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

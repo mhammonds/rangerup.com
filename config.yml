@@ -1,0 +1,17 @@
+development:
+  theme_id: "142616887365"
+  password: ${SHOPIFY_DEV_PASSWORD}
+  store: rangerup.myshopify.com
+  ignore_files:
+    - .git
+    - ".git/*"
+    - .gitignore
+
+production:
+  theme_id: "123323088965"
+  password: ${SHOPIFY_PROD_PASSWORD}
+  store: rangerup.myshopify.com
+  ignore_files:
+    - .git
+    - ".git/*"
+    - .gitignore

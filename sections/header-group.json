@@ -1,0 +1,67 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "3c0dde10-dda9-41cc-96ad-7883e1df6243": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"max-width:1720px; padding:0,0px,0, 50px;\">\n<div style=\"text-align:right\"><a href=\"https:\/\/rangerup.com\/collections\/unapologetically-american-1\"><img src=\"\/\/rangerup.com\/cdn\/shop\/files\/UALogo_opt_1.png?v=1613735917\" alt=\"\" srcset=\"\/\/rangerup.com\/cdn\/shop\/files\/UALogo_opt_1.png?v=1613735917?v=62931793622314051471669760728\" width=\"auto\" height=\"25px\" style=\"margin-left:20px;\" <\/img><\/a>\n\n<a href=\"https:\/\/rangerup.com\/collections\/get-fit-or-die-2\"><img src=\"\/\/rangerup.com\/cdn\/shop\/files\/GFODLogo_white_opt_1.png?v=1613735918\" alt=\"\" srcset=\"\/\/rangerup.com\/cdn\/shop\/files\/GFODLogo_white_opt_1.png?v=1613735918\" width=\"auto\" height=\"25px\" style=\"margin-left:20px;\" <\/img><\/a>\n\n<a href=\"https:\/\/rangerup.com\/collections\/caffeine-hate-b\"><img src=\"\/\/rangerup.com\/cdn\/shop\/files\/C_HLogo_white_opt_1.png?v=1613735918\" alt=\"\" srcset=\"\/\/rangerup.com\/cdn\/shop\/files\/C_HLogo_white_opt_1.png?v=1613735918\" width=\"auto\" height=\"30px\" style=\"margin-left:20px;\" <\/img><\/a>\n\n<a href=\"https:\/\/rangerup.com\/collections\/old-mans-club-1\"><img src=\"https:\/\/rangerup.com\/cdn\/shop\/files\/OMCLogo_opt_1.png?v=1613735918\" alt=\"\" srcset=\"https:\/\/rangerup.com\/cdn\/shop\/files\/OMCLogo_opt_1.png?v=1613735918\" width=\"auto\" height=\"30px\" style=\"margin-left:20px; margin-right:20px;\" <\/img><\/a><\/div><\/div>",
+        "color_scheme": "scheme-5bf6f4b6-aafe-4aa6-9f55-8a08ea904578",
+        "padding_top": 12,
+        "padding_bottom": 0
+      }
+    },
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "background-1",
+        "show_line_separator": true,
+        "show_social": false,
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "enable_country_selector": false,
+        "enable_language_selector": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "custom_css": [
+        ".mega-menu__link--level-2 {color: #d6bc7e;}",
+        ".mega-menu__list :hover {text-decoration: none;}"
+      ],
+      "settings": {
+        "logo_position": "middle-left",
+        "menu": "lum-main-menu",
+        "menu_type_desktop": "mega",
+        "sticky_header_type": "none",
+        "show_line_separator": false,
+        "color_scheme": "scheme-5bf6f4b6-aafe-4aa6-9f55-8a08ea904578",
+        "menu_color_scheme": "accent-1",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "mobile_logo_position": "center",
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 8
+      }
+    }
+  },
+  "order": [
+    "3c0dde10-dda9-41cc-96ad-7883e1df6243",
+    "announcement-bar",
+    "header"
+  ]
+}
