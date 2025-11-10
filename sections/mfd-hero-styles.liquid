@@ -1,0 +1,113 @@
+<div class="mfd-hero">
+  <div class="mfd-hero__box">
+    <div class="mfd-hero__circle">
+      <img src="{{ 'austin.jpg' | file_url }}" alt="Austin von Letkemann">
+    </div>
+    <h1 class="mfd-hero__title">MANDATORY FUNDAY</h1>
+    <button onclick="document.querySelector('.collection').scrollIntoView({behavior: 'smooth'})" class="mfd-hero__button">Shop the Collection</button>
+  </div>
+</div>
+
+<style>
+.mfd-hero {
+  position: relative;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('{{ "cartographer.png" | file_url }}');
+  background-repeat: repeat;
+  background-size: 300px 300px;
+  padding: 80px 20px;
+}
+
+.mfd-hero__box {
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 60px 100px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 1024px;
+}
+
+.mfd-hero__circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 30px;
+  border: 8px solid #F0A202;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mfd-hero__circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mfd-hero__title {
+  font-size: 36px;
+  font-weight: 900;
+  color: #000;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mfd-hero__button {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 16px 40px;
+  text-decoration: none;
+  border: 2px solid #F0A202;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.mfd-hero__button:hover {
+  background: #F0A202;
+  color: #000;
+  border-color: #000;
+}
+
+@media (max-width: 749px) {
+  .mfd-hero {
+    min-height: 500px;
+    padding: 60px 20px;
+  }
+  
+  .mfd-hero__box {
+    padding: 40px 30px;
+    border-radius: 15px;
+    width: 95%;
+  }
+  
+  .mfd-hero__circle {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .mfd-hero__title {
+    font-size: 28px;
+  }
+  
+  .mfd-hero__button {
+    padding: 14px 30px;
+    font-size: 14px;
+  }
+}
+</style>
+
+{% schema %}
+{
+  "name": "MFD Hero",
+  "settings": []
+}
+{% endschema %}
