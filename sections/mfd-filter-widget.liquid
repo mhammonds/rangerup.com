@@ -1,0 +1,134 @@
+<div class="mfd-filter">
+  <div class="mfd-filter__container">
+    <h2 class="mfd-filter__heading">Mandatory Funday Hoodies</h2>
+    <div class="mfd-filter__buttons">
+      <button class="mfd-filter__btn mfd-filter__btn--active" data-filter="all">All Hoodies</button>
+      <button class="mfd-filter__btn" data-filter="mfdmen">Men's</button>
+      <button class="mfd-filter__btn" data-filter="mfdwomen">Women's</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.mfd-filter {
+  background: #f5f5f5;
+  padding: 40px 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.mfd-filter__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mfd-filter__heading {
+  font-size: 32px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 24px 0;
+  color: #000;
+}
+
+.mfd-filter__buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mfd-filter__btn {
+  background: #fff;
+  border: 2px solid #000;
+  color: #000;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.mfd-filter__btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.mfd-filter__btn--active {
+  background: #F0A202;
+  border-color: #F0A202;
+  color: #000;
+}
+
+@media (max-width: 749px) {
+  .mfd-filter__heading {
+    font-size: 24px;
+  }
+  
+  .mfd-filter__btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.mfd-filter__btn');
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      // Update active button
+      filterButtons.forEach(btn => btn.classList.remove('mfd-filter__btn--active'));
+      this.classList.add('mfd-filter__btn--active');
+      
+      const filter = this.getAttribute('data-filter');
+      
+      // Find all product cards - try multiple selectors for Dawn theme
+      const products = document.querySelectorAll('.grid__item');
+      
+      products.forEach(product => {
+        // Get product link to extract tags from URL or data attributes
+        const link = product.querySelector('a[href*="/products/"]');
+        if (!link) return;
+        
+        // Check if product has data-tags or get from classes
+        const productClasses = product.className || '';
+        const linkClasses = link.className || '';
+        const allClasses = productClasses + ' ' + linkClasses;
+        
+        if (filter === 'all') {
+          // Show all products
+          product.style.display = '';
+        } else if (filter === 'mfdmen') {
+          // Show only if has mfdmen in classes
+          if (allClasses.includes('mfdmen') || allClasses.includes('men')) {
+            product.style.display = '';
+          } else {
+            product.style.display = 'none';
+          }
+        } else if (filter === 'mfdwomen') {
+          // Show only if has mfdwomen in classes
+          if (allClasses.includes('mfdwomen') || allClasses.includes('women')) {
+            product.style.display = '';
+          } else {
+            product.style.display = 'none';
+          }
+        }
+      });
+    });
+  });
+  
+  // Don't hide anything on initial load - show all products
+});
+</script>
+
+{% schema %}
+{
+  "name": "MFD Filter Widget",
+  "settings": []
+}
+{% endschema %}

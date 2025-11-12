@@ -4,6 +4,14 @@
       "type": "mfd-hero-styles",
       "settings": {}
     },
+    "featured_hoodies": {
+      "type": "mfd-featured-hoodies",
+      "settings": {}
+    },
+    "all_products_heading": {
+      "type": "mfd-all-products-heading",
+      "settings": {}
+    },
     "product_grid": {
       "type": "main-collection-product-grid",
       "settings": {
@@ -19,13 +27,15 @@
         "filter_type": "horizontal",
         "enable_sorting": true,
         "columns_mobile": "2",
-        "padding_top": 60,
+        "padding_top": 20,
         "padding_bottom": 60
       }
     }
   },
   "order": [
     "custom_hero",
+    "featured_hoodies",
+    "all_products_heading",
     "product_grid"
   ]
 }
